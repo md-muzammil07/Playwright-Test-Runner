@@ -15,7 +15,7 @@ const consoleLogs = [];
 page.on("console", msg => {
     if(msg.type()== "error") { // this will print only the error.
         console.log(msg.text());
-        consoleLogs.push(msg.text());
+        // consoleLogs.push(msg.text());
     }
 })
   await page.goto("https://letcode.in/elements");
