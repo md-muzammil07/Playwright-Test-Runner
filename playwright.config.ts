@@ -9,11 +9,11 @@ const config: PlaywrightTestConfig = {
         screenshot:"only-on-failure",
         video: "retry-with-video",
         launchOptions: {
-            slowMo: 500
+            slowMo: 500,
         }
 
     },
-    testMatch:["apiresponse.test.ts"],
+    testMatch:["playLogger.test.ts"],
     retries: 0,
     reporter: [['html', { open: 'never' }]],
     
